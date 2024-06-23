@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #fed9b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.app-container {
+    width: 400px;
+    background: #3E5151;
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.app-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.dice-roller {
+    font-size: 100px;
+    margin: -20px 0;
+}
+
+.dice-rolling-animation {
+    animation: rolling 1s forwards;
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotateZ(0) rotateY(0);
+    }
+
+    100% {
+        transform: rotateZ(720deg) rotateY(720deg);
+    }
+}
+
+.roll-button {
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.roll-button:active {
+    transform: scale(0.95);
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E6DADA;
+    margin: 15px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
